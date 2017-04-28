@@ -1,0 +1,58 @@
+a {
+  color:white;
+}
+a:hover {
+  text-decoration:none;
+}
+
+#photo-container {
+  background-color:#ff5700;
+  color:white;
+  padding-top:30px;
+}
+
+
+#greeting {
+  background-color:#ff5700;
+  color:white;
+}
+
+#photo-big {
+  margin:0 auto;
+}
+
+#curriculum-border:hover {
+  border:2px solid white;
+  background-color:white;
+  color:#ff5700;
+}
+#curriculum-glyph {
+  font-size:88px;
+}
+
+#portfolio-border:hover {
+  border:2px solid white;
+  background-color:white;
+  color:#ff5700;
+}
+#portfolio-glyph {
+  font-size:88px;
+}
+
+#contact-border:hover {
+  border:2px solid white;
+  background-color:white;
+  color:#ff5700;
+
+}
+#contact-glyph {
+  font-size:88px;
+}
+
+
+
+@media (min-width:576px) {
+  #photo-big {
+    width:350px;
+  }
+}

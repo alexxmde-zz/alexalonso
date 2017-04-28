@@ -1,0 +1,16 @@
+body {
+  font-family: 'Comfortaa', cursive;
+}
+
+#nav-right {
+  font-size:22px;
+}
+
+#nav-brand{
+  font-size:22px;
+}
+
+#navbar {
+  margin:0;
+  background-color:white;
+}

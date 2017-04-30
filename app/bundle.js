@@ -23040,7 +23040,7 @@ var Greeting = function Greeting() {
             _react2.default.createElement(
               'div',
               { id: 'portfolio-border' },
-              _react2.default.createElement(_reactBootstrap.Glyphicon, { glyph: 'book', id: 'portfolio-glyph' }),
+              _react2.default.createElement(_reactBootstrap.Glyphicon, { glyph: 'book', id: 'book-glyph' }),
               _react2.default.createElement(
                 'h3',
                 null,
@@ -23121,7 +23121,7 @@ var PortfolioPage = function PortfolioPage() {
           _react2.default.createElement(
             'a',
             { href: 'http://www.davilari.com.br' },
-            _react2.default.createElement(_reactBootstrap.Image, { src: '/img/davilari.jpg', responsive: true }),
+            _react2.default.createElement(_reactBootstrap.Image, { src: '/img/davilari.jpg', responsive: true, className: 'portfolio-image' }),
             _react2.default.createElement(
               'h1',
               null,
@@ -23140,7 +23140,7 @@ var PortfolioPage = function PortfolioPage() {
           _react2.default.createElement(
             'a',
             { href: 'http://www.mfloresimoveis.com.br' },
-            _react2.default.createElement(_reactBootstrap.Image, { src: '/img/mflores.png', responsive: true }),
+            _react2.default.createElement(_reactBootstrap.Image, { src: '/img/mflores.png', className: 'portfolio-image', responsive: true }),
             _react2.default.createElement(
               'h1',
               null,
@@ -25153,7 +25153,7 @@ exports = module.exports = __webpack_require__(51)(undefined);
 
 
 // module
-exports.push([module.i, "#contato {\n  background-color:#ff5700;\n  color:white;\n}\n\n#mensagem {\n  height:200px;\n}\n\n\n\n#validacao {\n  background-color:white;\n  color:red;\n  margin-bottom:10px;\n  text-align: center;\n}\n", ""]);
+exports.push([module.i, "#contato {\n  background-color:#014556;\n  color:white;\n}\n\n#mensagem {\n  height:200px;\n}\n\n\n\n#validacao {\n  background-color:white;\n  color:red;\n  margin-bottom:10px;\n  text-align: center;\n}\n", ""]);
 
 // exports
 
@@ -25167,7 +25167,7 @@ exports = module.exports = __webpack_require__(51)(undefined);
 
 
 // module
-exports.push([module.i, "#photo {\n  width:300px;\n  margin:0 auto;\n}\n\n#photo-description {\n  padding:0 30px 0 30px;\n}\n\n.glyph {\n  font-size:88px;\n  color:white;\n}\n\n#habilidades {\n  padding-top:50px;\n  color:white;\n  background-color:#2ad4ff;\n}\n\n#habilidades h4 {\n  margin-bottom:60px;\n}\n\n#experiencia {\n  background-color:#ffcc00;\n  color:white;\n  padding-top:60px;\n}\n\n#experiencia h4 {\n  padding:0 100px 0 100px;\n  margin-bottom:60px;\n}\n\n#academica {\n  background-color:#252525;\n  color:white;\n  text-align:center;\n}\n\n#academica h4 {\n  margin-bottom:60px;\n}\n\n", ""]);
+exports.push([module.i, "#photo {\n  width:300px;\n  margin:0 auto;\n}\n\n#photo-description {\n  padding:0 30px 0 30px;\n}\n\n.glyph {\n  font-size:88px;\n  color:white;\n}\n\n#habilidades {\n  padding-top:50px;\n  color:white;\n  background-color:#014556;\n}\n\n#habilidades h4 {\n  margin-bottom:60px;\n}\n\n#experiencia {\n  background-color:#6d0000;\n  color:white;\n  padding-top:60px;\n}\n\n#experiencia h4 {\n  padding:0 100px 0 100px;\n  margin-bottom:60px;\n}\n\n#academica {\n  background-color:#252525;\n  color:white;\n  text-align:center;\n}\n\n#academica h4 {\n  margin-bottom:60px;\n}\n\n", ""]);
 
 // exports
 
@@ -25181,7 +25181,7 @@ exports = module.exports = __webpack_require__(51)(undefined);
 
 
 // module
-exports.push([module.i, "a {\n  color:white;\n}\na:hover {\n  text-decoration:none;\n}\n\n#photo-container {\n  background-color:#ff5700;\n  color:white;\n  padding-top:30px;\n}\n\n\n#greeting {\n  background-color:#ff5700;\n  color:white;\n}\n\n#photo-big {\n  margin:0 auto;\n}\n\n#curriculum-border:hover {\n  border:2px solid white;\n  background-color:white;\n  color:#ff5700;\n}\n#curriculum-glyph {\n  font-size:88px;\n}\n\n#portfolio-border:hover {\n  border:2px solid white;\n  background-color:white;\n  color:#ff5700;\n}\n#portfolio-glyph {\n  font-size:88px;\n}\n\n#contact-border:hover {\n  border:2px solid white;\n  background-color:white;\n  color:#ff5700;\n\n}\n#contact-glyph {\n  font-size:88px;\n}\n\n\n\n@media (min-width:576px) {\n  #photo-big {\n    width:350px;\n  }\n}\n", ""]);
+exports.push([module.i, "a {\n  color:white;\n}\na:hover {\n  text-decoration:none;\n}\n\n#photo-container {\n  background-color:#252525;\n  color:white;\n  padding-top:30px;\n  padding-bottom:30px;\n}\n\n\n#greeting {\n  background-color:#252;\n  color:white;\n}\n\n#photo-big {\n  margin:0 auto;\n}\n\n#curriculum-border:hover {\n  border:2px solid white;\n  background-color:white;\n  color:#252;\n}\n#curriculum-glyph {\n  font-size:88px;\n}\n#curriculum-border {\n}\n\n#portfolio-border:hover {\n  border:2px solid white;\n  background-color:white;\n  color:#252;\n}\n#book-glyph {\n  font-size:88px;\n  margin-top:0;\n}\n#portfolio-border {\n}\n\n#contact-border {\n  padding-bottom:30px;\n}\n\n#contact-border:hover {\n  border:2px solid white;\n  background-color:white;\n  color:#252;\n\n}\n#contact-glyph {\n  font-size:88px;\n}\n\n\n\n@media (min-width:576px) {\n  #photo-big {\n    width:350px;\n  }\n}\n", ""]);
 
 // exports
 
@@ -25195,7 +25195,7 @@ exports = module.exports = __webpack_require__(51)(undefined);
 
 
 // module
-exports.push([module.i, "#portfolio {\n  color:white;\n  background-color:#252525;\n}\n\n#portfolio-glyph {\n  font-size:88px;\n  margin-top:50px;\n}\n\n#portfolio-items {\n  margin-top:30px;\n  margin-bottom:100px;\n}\n\n.portfolio-item a {\n  color:black;\n}\n\n.portfolio-item img {\n  height:50%;\n  width:100%;\n}\n\n.portfolio-item a:hover {\n  text-decoration:underline;\n}\n", ""]);
+exports.push([module.i, "#portfolio {\n  color:white;\n  background-color:#252525;\n}\n\n#portfolio-glyph {\n  font-size:88px;\n  margin-top:50px;\n}\n\n#portfolio-items {\n  margin-top:30px;\n  margin-bottom:100px;\n}\n\n.portfolio-item a {\n  color:black;\n}\n\n.portfolio-item img {\n  height:350px;\n  width:350px;\n  margin:0 auto;\n}\n\n.portfolio-item a:hover {\n  text-decoration:underline;\n}\n\n", ""]);
 
 // exports
 
@@ -25209,7 +25209,7 @@ exports = module.exports = __webpack_require__(51)(undefined);
 
 
 // module
-exports.push([module.i, "#mapa-do-site {\n}\n\n#mapa-do-site h3 a {\n  color:black;\n}\n\n#mapa-do-site h3 a:hover {\n  text-decoration:underline;\n}\n\n.footer-image {\n  width:60px;\n}\n\n#footer {\n  background-color:#d6d6d6;\n}\n", ""]);
+exports.push([module.i, "#mapa-do-site {\n}\n\n#mapa-do-site h3 a {\n  color:black;\n}\n\n#mapa-do-site h3 a:hover {\n  text-decoration:underline;\n}\n\n.footer-image {\n  width:60px;\n}\n\n#footer {\n}\n", ""]);
 
 // exports
 

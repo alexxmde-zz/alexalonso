@@ -6,14 +6,15 @@ a:hover {
 }
 
 #photo-container {
-  background-color:#ff5700;
+  background-color:#252525;
   color:white;
   padding-top:30px;
+  padding-bottom:30px;
 }
 
 
 #greeting {
-  background-color:#ff5700;
+  background-color:#252;
   color:white;
 }
 
@@ -24,25 +25,34 @@ a:hover {
 #curriculum-border:hover {
   border:2px solid white;
   background-color:white;
-  color:#ff5700;
+  color:#252;
 }
 #curriculum-glyph {
   font-size:88px;
+}
+#curriculum-border {
 }
 
 #portfolio-border:hover {
   border:2px solid white;
   background-color:white;
-  color:#ff5700;
+  color:#252;
 }
-#portfolio-glyph {
+#book-glyph {
   font-size:88px;
+  margin-top:0;
+}
+#portfolio-border {
+}
+
+#contact-border {
+  padding-bottom:30px;
 }
 
 #contact-border:hover {
   border:2px solid white;
   background-color:white;
-  color:#ff5700;
+  color:#252;
 
 }
 #contact-glyph {

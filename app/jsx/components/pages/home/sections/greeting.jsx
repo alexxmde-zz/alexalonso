@@ -26,7 +26,7 @@ const Greeting = () => (
         <Col xs={12} sm={6} id="portfolio-container">
           <a href="/#/portfolio">
             <div id="portfolio-border">
-              <Glyphicon glyph="book" id="portfolio-glyph" />
+              <Glyphicon glyph="book" id="book-glyph" />
               <h3>Ver Portfolio</h3>
             </div>
           </a>

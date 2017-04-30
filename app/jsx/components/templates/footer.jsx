@@ -1,5 +1,6 @@
 import React from 'react'
 import { Col, Row, Glyphicon, Image } from 'react-bootstrap'
+import { Link } from 'react-router'
 import './css/footer.css'
 
 const Footer = () => (
@@ -8,7 +9,7 @@ const Footer = () => (
       <Col xs={12} md={4} mdOffset={2} id="mapa-do-site">
         <h1>Alex Alonso</h1>
         <h3>
-          <a href="/#/">
+          <a href="/#/#navbar">
             <Glyphicon glyph="home" />Home
           </a>
         </h3>

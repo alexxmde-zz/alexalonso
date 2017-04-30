@@ -22887,6 +22887,46 @@ var CurriculoPage = function CurriculoPage() {
           null,
           'Meu primeiro emprego, logo que terminei o curso t\xE9cnico e o ensino m\xE9dio. Desenvolvi websites em PHP e ASP.Net Webforms para Sabesp e Centro Paula Souza. Escrevi muito MySQL e muito PHP, na \xE9poca, sem framework. Foi nessa empresa que aprendi o trivial do dia a dia de um desenvolvedor.'
         )
+      ),
+      _react2.default.createElement(
+        _reactBootstrap.Col,
+        { xs: 12, id: 'academica' },
+        _react2.default.createElement(_reactBootstrap.Glyphicon, { glyph: 'education', className: 'glyph' }),
+        _react2.default.createElement(
+          'h1',
+          null,
+          'Experi\xEAncia Acad\xEAmica'
+        ),
+        _react2.default.createElement(
+          'h3',
+          null,
+          '2010-2011'
+        ),
+        _react2.default.createElement(
+          'h3',
+          null,
+          'ETEC Centro Paula Souza - Inform\xE1tica (foco em desenvolvimento de software)'
+        ),
+        _react2.default.createElement(
+          'h4',
+          null,
+          'Meu primeiro curso na \xE1rea. Nele aprendi a criar aplica\xE7\xF5es Desktop Java e VB.Net. Aprendi tamb\xE9m banco de dados e UML.'
+        ),
+        _react2.default.createElement(
+          'h3',
+          null,
+          '2014 - Atualmente'
+        ),
+        _react2.default.createElement(
+          'h3',
+          null,
+          'Fatec S\xE3o Roque - Sistemas para Internet'
+        ),
+        _react2.default.createElement(
+          'h4',
+          null,
+          'Curso focado em sistemas web. Os projetos desenvolvidos ao longo do curso est\xE3o dispon\xEDveis em meu Github'
+        )
       )
     )
   );
@@ -23064,11 +23104,54 @@ var PortfolioPage = function PortfolioPage() {
       null,
       _react2.default.createElement(
         _reactBootstrap.Col,
-        { className: 'text-center' },
+        { xs: 12, id: 'portfolio', className: 'text-center' },
+        _react2.default.createElement(_reactBootstrap.Glyphicon, { glyph: 'book', id: 'portfolio-glyph' }),
         _react2.default.createElement(
           'h1',
           null,
           'Portfolio'
+        )
+      ),
+      _react2.default.createElement(
+        _reactBootstrap.Col,
+        { xs: 12, id: 'portfolio-items', className: 'text-center' },
+        _react2.default.createElement(
+          _reactBootstrap.Col,
+          { xs: 12, md: 6, className: 'portfolio-item' },
+          _react2.default.createElement(
+            'a',
+            { href: 'http://www.davilari.com.br' },
+            _react2.default.createElement(_reactBootstrap.Image, { src: '/img/davilari.jpg', responsive: true }),
+            _react2.default.createElement(
+              'h1',
+              null,
+              'Davilari'
+            ),
+            _react2.default.createElement(
+              'h3',
+              null,
+              'Desenvolvido em NodeJs, JQuery e MongoDB, hospedado no Red Hat OpenShift'
+            )
+          )
+        ),
+        _react2.default.createElement(
+          _reactBootstrap.Col,
+          { xs: 12, md: 6, className: 'portfolio-item' },
+          _react2.default.createElement(
+            'a',
+            { href: 'http://www.mfloresimoveis.com.br' },
+            _react2.default.createElement(_reactBootstrap.Image, { src: '/img/mflores.png', responsive: true }),
+            _react2.default.createElement(
+              'h1',
+              null,
+              'Miria Flores Im\xF3veis'
+            ),
+            _react2.default.createElement(
+              'h3',
+              null,
+              'Desenvolvido em NodeJs, React, React-Bootstrap e MongoDB. Hospedado no UOLHost'
+            )
+          )
         )
       )
     )
@@ -23101,7 +23184,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var Footer = function Footer() {
   return _react2.default.createElement(
     _reactBootstrap.Col,
-    { className: 'container-fluid' },
+    { className: 'container-fluid', id: 'footer' },
     _react2.default.createElement(
       _reactBootstrap.Row,
       null,
@@ -25084,7 +25167,7 @@ exports = module.exports = __webpack_require__(51)(undefined);
 
 
 // module
-exports.push([module.i, "#photo {\n  width:300px;\n  margin:0 auto;\n}\n\n#photo-description {\n  padding:0 30px 0 30px;\n}\n\n.glyph {\n  font-size:88px;\n  color:white;\n}\n\n#habilidades {\n  padding-top:50px;\n  color:white;\n  background-color:#2ad4ff;\n}\n\n#habilidades h4 {\n  margin-bottom:60px;\n}\n\n#experiencia {\n  background-color:#ffcc00;\n  color:white;\n  padding-top:60px;\n}\n\n#experiencia h4 {\n  padding:0 100px 0 100px;\n  margin-bottom:60px;\n}\n", ""]);
+exports.push([module.i, "#photo {\n  width:300px;\n  margin:0 auto;\n}\n\n#photo-description {\n  padding:0 30px 0 30px;\n}\n\n.glyph {\n  font-size:88px;\n  color:white;\n}\n\n#habilidades {\n  padding-top:50px;\n  color:white;\n  background-color:#2ad4ff;\n}\n\n#habilidades h4 {\n  margin-bottom:60px;\n}\n\n#experiencia {\n  background-color:#ffcc00;\n  color:white;\n  padding-top:60px;\n}\n\n#experiencia h4 {\n  padding:0 100px 0 100px;\n  margin-bottom:60px;\n}\n\n#academica {\n  background-color:#252525;\n  color:white;\n  text-align:center;\n}\n\n#academica h4 {\n  margin-bottom:60px;\n}\n\n", ""]);
 
 // exports
 
@@ -25112,7 +25195,7 @@ exports = module.exports = __webpack_require__(51)(undefined);
 
 
 // module
-exports.push([module.i, "", ""]);
+exports.push([module.i, "#portfolio {\n  color:white;\n  background-color:#252525;\n}\n\n#portfolio-glyph {\n  font-size:88px;\n  margin-top:50px;\n}\n\n#portfolio-items {\n  margin-top:30px;\n  margin-bottom:100px;\n}\n\n.portfolio-item a {\n  color:black;\n}\n\n.portfolio-item img {\n  height:50%;\n  width:100%;\n}\n\n.portfolio-item a:hover {\n  text-decoration:underline;\n}\n", ""]);
 
 // exports
 
@@ -25126,7 +25209,7 @@ exports = module.exports = __webpack_require__(51)(undefined);
 
 
 // module
-exports.push([module.i, "#mapa-do-site {\n}\n\n#mapa-do-site h3 a {\n  color:black;\n}\n\n#mapa-do-site h3 a:hover {\n  text-decoration:underline;\n}\n\n.footer-image {\n  width:60px;\n}\n", ""]);
+exports.push([module.i, "#mapa-do-site {\n}\n\n#mapa-do-site h3 a {\n  color:black;\n}\n\n#mapa-do-site h3 a:hover {\n  text-decoration:underline;\n}\n\n.footer-image {\n  width:60px;\n}\n\n#footer {\n  background-color:#d6d6d6;\n}\n", ""]);
 
 // exports
 

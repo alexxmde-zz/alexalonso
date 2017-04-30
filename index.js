@@ -3,6 +3,7 @@ const router = require('./api/routes');
 const bodyParser = require('body-parser')
 
 const app = express();
+const port = process.env.PORT || 3000
 
 app.use(bodyParser.json())
 app.use('/', express.static('app'));
@@ -20,11 +21,11 @@ app.use('/', corsMiddleware, express.static('app'));
 app.use(router)
 app.use(corsMiddleware)
 
-app.listen(3000, (err) => {
+app.listen(port, (err) => {
   if (err) {
     console.log(err)
   } else {
-    console.log('Listening to port 3000')
+    console.log(`listening to port ${port}`)
   }
 })
 

@@ -2,19 +2,21 @@ import React from 'react'
 import { Row, Col, Navbar, Nav, NavItem } from 'react-bootstrap'
 
 const Header = () => (
-  <Col className="container">
+  <Col className="container-fluid">
     <Row>
       <Navbar id="navbar">
         <Navbar.Header>
           <Navbar.Brand id="nav-brand">
-            Alex Alonso
+            <a href="/">
+              Alex Alonso
+            </a>
           </Navbar.Brand>
           <Navbar.Toggle />
         </Navbar.Header>
         <Navbar.Collapse>
           <Nav pullRight id="nav-right">
-            <NavItem href="/#Habilidades">Currículo</NavItem>
-            <NavItem href="/#Portfolio">Portfolio</NavItem>
+            <NavItem href="/#/curriculo">Currículo</NavItem>
+            <NavItem href="/#/portfolio">Portfolio</NavItem>
             <NavItem href="/#Contato">Contato</NavItem>
           </Nav>
         </Navbar.Collapse>

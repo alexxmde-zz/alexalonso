@@ -1,0 +1,17 @@
+#contato {
+  background-color:#ff5700;
+  color:white;
+}
+
+#mensagem {
+  height:200px;
+}
+
+
+
+#validacao {
+  background-color:white;
+  color:red;
+  margin-bottom:10px;
+  text-align: center;
+}

@@ -61,6 +61,19 @@ const CurriculoPage = () => (
           empresa que aprendi o trivial do dia a dia de um desenvolvedor.
         </h4>
       </Col>
+      <Col xs={12}  id="academica">
+        <Glyphicon glyph="education" className="glyph" />
+        <h1>Experiência Acadêmica</h1>
+        <h3>2010-2011</h3>
+        <h3>ETEC Centro Paula Souza - Informática (foco em desenvolvimento de software)</h3>
+        <h4>
+          Meu primeiro curso na área. Nele aprendi a criar aplicações Desktop Java e VB.Net. Aprendi
+          também banco de dados e UML.
+        </h4>
+        <h3>2014 - Atualmente</h3>
+        <h3>Fatec São Roque - Sistemas para Internet</h3>
+        <h4>Curso focado em sistemas web. Os projetos desenvolvidos ao longo do curso estão disponíveis em meu Github</h4>
+      </Col>
 
     </Row>
   </Col>

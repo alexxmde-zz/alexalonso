@@ -1,0 +1,18 @@
+#mapa-do-site {
+}
+
+#mapa-do-site h3 a {
+  color:black;
+}
+
+#mapa-do-site h3 a:hover {
+  text-decoration:underline;
+}
+
+.footer-image {
+  width:60px;
+}
+
+#footer {
+  background-color:#d6d6d6;
+}

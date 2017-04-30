@@ -1,0 +1,27 @@
+#portfolio {
+  color:white;
+  background-color:#252525;
+}
+
+#portfolio-glyph {
+  font-size:88px;
+  margin-top:50px;
+}
+
+#portfolio-items {
+  margin-top:30px;
+  margin-bottom:100px;
+}
+
+.portfolio-item a {
+  color:black;
+}
+
+.portfolio-item img {
+  height:50%;
+  width:100%;
+}
+
+.portfolio-item a:hover {
+  text-decoration:underline;
+}

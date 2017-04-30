@@ -3,7 +3,7 @@ import { Col, Row, Image, Glyphicon } from 'react-bootstrap'
 import './css/greeting.css'
 
 const Greeting = () => (
-  <Col className="container">
+  <Col className="container-fluid">
     <Row>
       <Col xs={12} id="photo-container" className="text-center">
         <Image id="photo-big" src="/img/alex.jpg" rounded responsive />

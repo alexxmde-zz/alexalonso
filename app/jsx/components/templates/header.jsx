@@ -1,5 +1,6 @@
 import React from 'react'
 import { Row, Col, Navbar, Nav, NavItem } from 'react-bootstrap'
+import './css/header.css'
 
 const Header = () => (
   <Col className="container-fluid">

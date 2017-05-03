@@ -22854,7 +22854,7 @@ var CurriculoPage = function CurriculoPage() {
         _react2.default.createElement(
           'h2',
           { id: 'photo-description' },
-          'Ingl\xEAs fluente, experi\xEAnte em desenvolvimento web, mobile e desktop.'
+          'Ingl\xEAs fluente, experiente em desenvolvimento web, mobile e desktop.'
         )
       ),
       _react2.default.createElement(
@@ -22959,7 +22959,7 @@ var CurriculoPage = function CurriculoPage() {
         _react2.default.createElement(
           'h4',
           null,
-          'Durante o tempo que passei na empresa, desenvolvi e mantive o software de GED interno, desenvolvido em C#/.Net Windows Forms e SQL Server. Aprendi muito sobre .Net e principalmente banco de dados, ja que parte das regras do sistema era feita atrav\xE9s de stored procedures e muita manuten\xE7\xE3o era feita diretamente no banco, o que exigia, muitas vezes, queries complexas.'
+          'Durante o tempo que passei na empresa, desenvolvi e mantive o software de GED interno, desenvolvido em C#/.Net Windows Forms e SQL Server. Aprendi muito sobre .Net e principalmente banco de dados, haja vista que parte das regras do sistema era feita atrav\xE9s de stored procedures e muita manuten\xE7\xE3o era feita diretamente no banco, o que exigia, muitas vezes, queries complexas.'
         ),
         _react2.default.createElement(
           'h3',
@@ -23341,7 +23341,7 @@ var Footer = function Footer() {
           null,
           _react2.default.createElement(
             'a',
-            { href: 'https://www.facebook.com/alexdoutstanding' },
+            { href: 'https://www.facebook.com/alexalonsosistemas' },
             _react2.default.createElement(_reactBootstrap.Image, { src: '/img/facebook.png', className: 'footer-image' }),
             ' Facebook'
           )

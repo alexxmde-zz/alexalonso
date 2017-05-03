@@ -8,7 +8,7 @@ const CurriculoPage = () => (
       <Col xs={12} id="photo-container" className="text-center">
         <h1>Desenvolvedor Fullstack</h1>
         <Image src="/img/alex.jpg" id="photo" responsive />
-        <h2 id="photo-description">Inglês fluente, experiênte
+        <h2 id="photo-description">Inglês fluente, experiente
           em desenvolvimento web, mobile e desktop.</h2>
       </Col>
       <Col xs={12} id="habilidades" className="text-center">
@@ -48,7 +48,7 @@ const CurriculoPage = () => (
         <h4>
           Durante o tempo que passei na empresa, desenvolvi e mantive o software
           de GED interno, desenvolvido em C#/.Net Windows Forms e SQL Server.
-          Aprendi muito sobre .Net e principalmente banco de dados, ja que parte
+          Aprendi muito sobre .Net e principalmente banco de dados, haja vista que parte
           das regras do sistema era feita através de stored procedures e muita manutenção
           era feita diretamente no banco, o que exigia, muitas vezes, queries complexas.
         </h4>

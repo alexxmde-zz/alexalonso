@@ -31,7 +31,7 @@ const Footer = () => (
       <Col xs={12} md={4} mdOffset={1} id="mapa-do-site">
         <h1>Redes Sociais</h1>
         <h3>
-          <a href="https://www.facebook.com/alexdoutstanding">
+          <a href="https://www.facebook.com/alexalonsosistemas">
             <Image src="/img/facebook.png" className="footer-image" /> Facebook
           </a>
         </h3>

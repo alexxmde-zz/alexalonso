@@ -6,7 +6,7 @@ const app = express();
 const port = process.env.PORT || 3000
 
 app.use(bodyParser.json())
-app.use('/', express.static('app'));
+
 const corsMiddleware = function corsMiddleware(req, res, next) {
   res.header('Access-Control-Allow-Origin', req.headers.origin || '*');
   res.header('Access-Control-Allow-Methods', 'GET, POST, PUT, HEAD, DELETE, OPTIONS');
@@ -16,17 +16,20 @@ const corsMiddleware = function corsMiddleware(req, res, next) {
   }
   return next();
 }
+
 function requireHTTPS(req, res, next) {
-    if (!req.secure) {
+    if (!req.connection.encrypted) {
+      console.log('HTTP. Redirectin to HTTPS')
         //FYI this should work for local development as well
         return res.redirect('https://' + req.get('host') + req.url);
     }
+    console.log('HTTPS. Ok')
     next();
 }
 
 app.use('/', corsMiddleware, requireHTTPS, express.static('app'));
-app.use(requireHTTPS)
 app.use(router)
+app.use(requireHTTPS)
 app.use(corsMiddleware)
 
 app.listen(port, (err) => {

@@ -22696,7 +22696,7 @@ var ContatoPage = function (_React$Component) {
       var _this2 = this;
 
       this.setState({ buttonText: 'Enviando...' });
-      fetch('http://localhost:3000/enviarMensagem', {
+      fetch('https://alexalonso.com.br/enviarMensagem', {
         method: 'POST',
         body: (0, _stringify2.default)(this.state),
         headers: new Headers({
@@ -22713,6 +22713,8 @@ var ContatoPage = function (_React$Component) {
             console.log(text);
           }
         });
+      }).catch(function (err) {
+        return console.log(err);
       });
     }
   }, {

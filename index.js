@@ -16,8 +16,16 @@ const corsMiddleware = function corsMiddleware(req, res, next) {
   }
   return next();
 }
+function requireHTTPS(req, res, next) {
+    if (!req.secure) {
+        //FYI this should work for local development as well
+        return res.redirect('https://' + req.get('host') + req.url);
+    }
+    next();
+}
 
-app.use('/', corsMiddleware, express.static('app'));
+app.use('/', corsMiddleware, requireHTTPS, express.static('app'));
+app.use(requireHTTPS)
 app.use(router)
 app.use(corsMiddleware)
 

@@ -18,7 +18,7 @@ const corsMiddleware = function corsMiddleware(req, res, next) {
 }
 
 function requireHTTPS(req, res, next) {
-    if (!req.connection.encrypted) {
+    if (!req.secure) {
       console.log('HTTP. Redirectin to HTTPS')
         //FYI this should work for local development as well
         return res.redirect('https://' + req.get('host') + req.url);

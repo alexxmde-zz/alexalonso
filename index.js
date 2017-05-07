@@ -30,4 +30,4 @@ app.use('/', corsMiddleware, express.static('app', {dotfiles: 'allow'}));
 app.use(bodyParser.json())
 app.use(router)
 
-secureServer.listen(port)
+server.listen(port)

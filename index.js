@@ -3,14 +3,17 @@ const router = require('./api/routes');
 const bodyParser = require('body-parser')
 const http = require('http')
 const https = require('https')
-
+const fs = require('fs')
 const app = express();
 const port = process.env.PORT || 3000
+const forceSSL = require('express-force-ssl')
 
-app.use(bodyParser.json())
-
-
-
+const ssl_options = {
+  key: fs.readFileSync('./privkey.pem').toString(),
+  cert: fs.readFileSync('./fullchain.pem').toString()
+}
+const server = http.createServer(app)
+const secureServer = https.createServer(ssl_options, app)
 
 
 const corsMiddleware = function corsMiddleware(req, res, next) {
@@ -23,27 +26,10 @@ const corsMiddleware = function corsMiddleware(req, res, next) {
   return next();
 }
 
-function requireHTTPS(req, res, next) {
-    /*if (!req.secure) {
-      console.log('HTTP. Redirectin to HTTPS')
-        //FYI this should work for local development as well
-        return res.redirect('https://' + req.get('host') + req.url);
-    }
-    console.log('HTTPS. Ok') */
-    next();
-}
 
-app.use('/', corsMiddleware, requireHTTPS, express.static('app', {dotfiles: 'allow'}));
+app.use('/', corsMiddleware, forceSSL, express.static('app', {dotfiles: 'allow'}));
+app.use(forceSSL)
+app.use(bodyParser.json())
 app.use(router)
-app.use(requireHTTPS)
-app.use(corsMiddleware)
 
-
-app.listen(port, (error) => {
-  if(!error) {
-    console.log('Listening to port: ' + port)
-
-  } else {
-    console.log(error)
-  }
-})
+secureServer.listen(port)

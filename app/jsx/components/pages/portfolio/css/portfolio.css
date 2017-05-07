@@ -7,10 +7,24 @@
   font-size:88px;
   margin-top:50px;
 }
+.portfolio-item {
+  margin-bottom:50px;
+}
+
+.portfolio-item:hover {
+}
+
+.portfolio-item{
+  background-color:white;
+  padding-top:50px;
+  min-height:650px;
+  border-right:8px solid #252525;
+  border-radius:15px;
+}
 
 #portfolio-items {
-  margin-top:30px;
   margin-bottom:100px;
+  background-color:#252525;
 }
 
 .portfolio-item a {

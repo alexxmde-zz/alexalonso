@@ -18,15 +18,27 @@ a:hover {
   color:white;
 }
 
+#options {
+  background-color:#252;
+  text-align:center;
+  padding-top:35px;
+  padding-bottom:35px;
+}
+
 #photo-big {
   margin:0 auto;
 }
 
-#curriculum-border:hover {
-  border:2px solid white;
+.option:hover {
   background-color:white;
-  color:#252;
+  color:#252 !important;
+
 }
+.option a:hover {
+  padding-top:25px;
+  color:#252 !important;
+}
+
 #curriculum-glyph {
   font-size:88px;
 }
@@ -34,27 +46,13 @@ a:hover {
 }
 
 #portfolio-border:hover {
-  border:2px solid white;
-  background-color:white;
-  color:#252;
 }
 #book-glyph {
   font-size:88px;
   margin-top:0;
 }
-#portfolio-border {
-}
 
-#contact-border {
-  padding-bottom:30px;
-}
 
-#contact-border:hover {
-  border:2px solid white;
-  background-color:white;
-  color:#252;
-
-}
 #contact-glyph {
   font-size:88px;
 }

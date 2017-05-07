@@ -6,6 +6,8 @@ const Greeting = () => (
   <Col className="container-fluid">
     <Row>
       <Col xs={12} id="photo-container" className="text-center">
+
+        <Image id="photo-logo" src="/img/alexalonso.png" responsive />
         <Image id="photo-big" src="/img/alex.jpg" rounded responsive />
       </Col>
     </Row>
@@ -13,7 +15,7 @@ const Greeting = () => (
       <Col xs={12} className="text-center" id="greeting">
         
         <h1>Olá, seja bem vindo! Eu sou Alex Alonso.</h1>
-        <h1>Eu desenvolvo websites.</h1>
+        <h1>Eu desenvolvo websites, apps e sistemas!</h1>
       </Col>
 
       <Col xs={12} id="options">

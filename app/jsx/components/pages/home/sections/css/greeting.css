@@ -26,7 +26,14 @@ a:hover {
 }
 
 #photo-big {
+  display:inline;
   margin:0 auto;
+}
+
+#photo-logo {
+  display:inline;
+  margin:0 auto;
+  height:350px;
 }
 
 .option:hover {
@@ -59,8 +66,6 @@ a:hover {
 
 
 
-@media (min-width:576px) {
   #photo-big {
     width:350px;
   }
-}

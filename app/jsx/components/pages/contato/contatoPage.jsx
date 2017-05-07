@@ -60,7 +60,7 @@ class ContatoPage extends React.Component {
   }
   enviarMensagem() {
     this.setState({ buttonText: 'Enviando...' })
-    fetch('http://localhost:3000/enviarMensagem', {
+    fetch('https://alexalonso.com.br/enviarMensagem', {
       method: 'POST',
       body: JSON.stringify(this.state),
       headers: new Headers({
@@ -77,7 +77,7 @@ class ContatoPage extends React.Component {
           console.log(text)
         }
       })
-    })
+    }).catch(err => console.log(err))
   }
   render() {
     let validacao = null

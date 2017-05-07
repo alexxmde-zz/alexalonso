@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #nav-right li:nth-child(1) a {
   color:#ea2d2d !important;
 }
@@ -8,13 +9,34 @@
 
 #nav-right li:nth-child(3) a {
   color:purple;
+=======
+.navbar-brand {
+  font-size:28px;
+}
+
+.navbar-brand:hover {
+  text-decoration:underline;
+}
+
+#navbar {
+  background-color:#112;
+>>>>>>> 992b429e35508413d69ef6d71cf856135fae12c1
 }
 
 #nav-right li a:hover {
   text-decoration:underline;
+<<<<<<< HEAD
 }
 
 .navbar-brand {
   font-size:28px;
 }
 
+=======
+  color:#252525;
+
+}
+
+
+
+>>>>>>> 992b429e35508413d69ef6d71cf856135fae12c1

@@ -6,7 +6,6 @@ const https = require('https')
 const fs = require('fs')
 const app = express();
 const port = process.env.PORT || 3000
-const forceSSL = require('express-force-ssl')
 
 const ssl_options = {
   key: fs.readFileSync('./privkey.pem').toString(),
@@ -27,8 +26,7 @@ const corsMiddleware = function corsMiddleware(req, res, next) {
 }
 
 
-app.use('/', corsMiddleware, forceSSL, express.static('app', {dotfiles: 'allow'}));
-app.use(forceSSL)
+app.use('/', corsMiddleware, express.static('app', {dotfiles: 'allow'}));
 app.use(bodyParser.json())
 app.use(router)
 

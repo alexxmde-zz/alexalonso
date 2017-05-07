@@ -23318,7 +23318,7 @@ exports = module.exports = __webpack_require__(43)(undefined);
 
 
 // module
-exports.push([module.i, "<<<<<<< HEAD\n#nav-right li:nth-child(1) a {\n  color:#ea2d2d !important;\n}\n\n#nav-right li:nth-child(2) a {\n  color:#3c3cbf;\n}\n\n#nav-right li:nth-child(3) a {\n  color:purple;\n}\n\n.navbar-brand {\n  font-size:28px;\n}\n\n.navbar-brand:hover {\n  text-decoration:underline;\n}\n\n#navbar {\n  background-color:#112;\n}\n\n#nav-right li a:hover {\n  text-decoration:underline;\n}\n\n.navbar-brand {\n  font-size:28px;\n}\n\n\n", ""]);
+exports.push([module.i, "#nav-right li:nth-child(1) a {\n  color:#ea2d2d !important;\n}\n\n#nav-right li:nth-child(2) a {\n  color:#3c3cbf;\n}\n\n#nav-right li:nth-child(3) a {\n  color:purple;\n}\n\n.navbar-brand {\n  font-size:28px;\n}\n\n.navbar-brand:hover {\n  text-decoration:underline;\n}\n\n#navbar {\n  background-color:#112;\n}\n\n#nav-right li a:hover {\n  text-decoration:underline;\n}\n\n.navbar-brand {\n  font-size:28px;\n}\n\n\n", ""]);
 
 // exports
 

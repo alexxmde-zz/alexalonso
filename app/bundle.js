@@ -21043,6 +21043,7 @@ var Greeting = function Greeting() {
       _react2.default.createElement(
         _reactBootstrap.Col,
         { xs: 12, id: 'photo-container', className: 'text-center' },
+        _react2.default.createElement(_reactBootstrap.Image, { id: 'photo-logo', src: '/img/alexalonso.png', responsive: true }),
         _react2.default.createElement(_reactBootstrap.Image, { id: 'photo-big', src: '/img/alex.jpg', rounded: true, responsive: true })
       )
     ),
@@ -21060,7 +21061,7 @@ var Greeting = function Greeting() {
         _react2.default.createElement(
           'h1',
           null,
-          'Eu desenvolvo websites.'
+          'Eu desenvolvo websites, apps e sistemas!'
         )
       ),
       _react2.default.createElement(
@@ -23276,7 +23277,7 @@ exports = module.exports = __webpack_require__(43)(undefined);
 
 
 // module
-exports.push([module.i, "a {\n  color:white;\n}\na:hover {\n  text-decoration:none;\n}\n\n#photo-container {\n  background-color:#252525;\n  color:white;\n  padding-top:30px;\n  padding-bottom:30px;\n}\n\n\n#greeting {\n  background-color:#252;\n  color:white;\n}\n\n#options {\n  background-color:#252;\n  text-align:center;\n  padding-top:35px;\n  padding-bottom:35px;\n}\n\n#photo-big {\n  margin:0 auto;\n}\n\n.option:hover {\n  background-color:white;\n  color:#252 !important;\n\n}\n.option a:hover {\n  padding-top:25px;\n  color:#252 !important;\n}\n\n#curriculum-glyph {\n  font-size:88px;\n}\n#curriculum-border {\n}\n\n#portfolio-border:hover {\n}\n#book-glyph {\n  font-size:88px;\n  margin-top:0;\n}\n\n\n#contact-glyph {\n  font-size:88px;\n}\n\n\n\n@media (min-width:576px) {\n  #photo-big {\n    width:350px;\n  }\n}\n", ""]);
+exports.push([module.i, "a {\n  color:white;\n}\na:hover {\n  text-decoration:none;\n}\n\n#photo-container {\n  background-color:#252525;\n  color:white;\n  padding-top:30px;\n  padding-bottom:30px;\n}\n\n\n#greeting {\n  background-color:#252;\n  color:white;\n}\n\n#options {\n  background-color:#252;\n  text-align:center;\n  padding-top:35px;\n  padding-bottom:35px;\n}\n\n#photo-big {\n  display:inline;\n  margin:0 auto;\n}\n\n#photo-logo {\n  display:inline;\n  margin:0 auto;\n  height:350px;\n}\n\n.option:hover {\n  background-color:white;\n  color:#252 !important;\n\n}\n.option a:hover {\n  padding-top:25px;\n  color:#252 !important;\n}\n\n#curriculum-glyph {\n  font-size:88px;\n}\n#curriculum-border {\n}\n\n#portfolio-border:hover {\n}\n#book-glyph {\n  font-size:88px;\n  margin-top:0;\n}\n\n\n#contact-glyph {\n  font-size:88px;\n}\n\n\n\n  #photo-big {\n    width:350px;\n  }\n", ""]);
 
 // exports
 

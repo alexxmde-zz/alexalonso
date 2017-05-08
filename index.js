@@ -7,13 +7,6 @@ const fs = require('fs')
 const app = express();
 const port = process.env.PORT || 3000
 
-const ssl_options = {
-  key: fs.readFileSync('./privkey.pem').toString(),
-  cert: fs.readFileSync('./fullchain.pem').toString()
-}
-const server = http.createServer(app)
-const secureServer = https.createServer(ssl_options, app)
-
 
 const corsMiddleware = function corsMiddleware(req, res, next) {
   res.header('Access-Control-Allow-Origin', req.headers.origin || '*');
@@ -30,4 +23,10 @@ app.use('/', corsMiddleware, express.static('app', {dotfiles: 'allow'}));
 app.use(bodyParser.json())
 app.use(router)
 
-server.listen(port)
+app.listen(port, (err) => {
+  if (err) {
+    return console.log(err)
+  } else {
+    console.log(`Listening to port ${port}`)
+  }
+})

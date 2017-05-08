@@ -14,12 +14,14 @@ a:hover {
 
 
 #greeting {
-  background-color:#252;
+
+  background-color:#014556;
   color:white;
 }
 
 #options {
-  background-color:#252;
+
+  background-color:#014556;
   text-align:center;
   padding-top:35px;
   padding-bottom:35px;
@@ -43,7 +45,8 @@ a:hover {
 }
 .option a:hover {
   padding-top:25px;
-  color:#252 !important;
+
+  background-color:#014556;
 }
 
 #curriculum-glyph {

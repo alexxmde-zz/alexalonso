@@ -2,7 +2,7 @@ import React from 'react'
 import { Button, Row, Col, FormGroup, FormControl, ControlLabel } from 'react-bootstrap'
 import './css/contato.css'
 
-class ContatoPage extends React.Component {
+class Contato extends React.Component {
   constructor(props) {
     super(props)
 
@@ -15,7 +15,7 @@ class ContatoPage extends React.Component {
       nome: '',
       email: '',
       mensagem: '',
-      buttonText: 'Enviar Mensagem',
+      buttonText: this.props.content.buttonSendMessage,
       enviando: false,
       enviado: false,
       textoValidacao: '',
@@ -70,7 +70,7 @@ class ContatoPage extends React.Component {
       response.text().then((text) => {
         if (response.ok) {
           this.setState({
-            buttonText: 'Mensagem enviada',
+            buttonText:this.props.content.buttonMessageSent, 
             bsStyle: 'success',
           })
         } else {
@@ -89,13 +89,13 @@ class ContatoPage extends React.Component {
         <Row id="contato">
           <Col xs={12} md={8} mdOffset={2} >
             <form onSubmit={this.onSubmit}>
-              <h1 className="text-center">Envie uma mensagem</h1>
+              <h1 className="text-center">{this.props.content.sendMessage}</h1>
               <FormGroup>
-                <ControlLabel>Nome</ControlLabel>
+                <ControlLabel>{this.props.content.name}</ControlLabel>
                 <FormControl
                   type="text"
                   value={this.state.nome}
-                  placeholder="Seu nome..."
+                  
                   onChange={this.onNomeChange}
                 />
               </FormGroup>
@@ -109,12 +109,11 @@ class ContatoPage extends React.Component {
                 />
               </FormGroup>
               <FormGroup>
-                <ControlLabel>Mensagem</ControlLabel>
+                <ControlLabel>{this.props.content.message}</ControlLabel>
                 <FormControl
                   id="mensagem"
                   componentClass="textarea"
                   value={this.state.mensagem}
-                  placeholder="Mensagem"
                   onChange={this.onMensagemChange}
                 />
               </FormGroup>
@@ -135,4 +134,4 @@ class ContatoPage extends React.Component {
     )
   }
 }
-export default ContatoPage
+export default Contato

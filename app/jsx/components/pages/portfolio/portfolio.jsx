@@ -2,7 +2,7 @@ import React from 'react'
 import { Row, Col, Image, Glyphicon } from 'react-bootstrap'
 import './css/portfolio.css'
 
-const PortfolioPage = () => (
+const Portfolio = ({content}) => (
   <Col className="container-fluid">
     <Row>
       <Col xs={12} id="portfolio" className="text-center">
@@ -15,27 +15,21 @@ const PortfolioPage = () => (
           <a href="http://www.davilari.com.br">
             <Image src="/img/davilari.jpg" responsive className="portfolio-image" />
             <h1>Davilari</h1>
-            <h3>Desenvolvido em NodeJs, JQuery e MongoDB, hospedado no Red Hat OpenShift.
-              Possuí também um CMS que gerencia os produtos, promoções, ambientes
-              e acabamentos.</h3>
+            <h3>{content.davilariDescription}</h3>
           </a>
         </Col>
         <Col xs={12} md={4} className="portfolio-item">
           <a href="http://www.mfloresimoveis.com.br">
             <Image src="/img/mflores.png" className="portfolio-image" responsive />
             <h1>Miria Flores Imóveis</h1>
-            <h3>Desenvolvido em NodeJs, React, React-Bootstrap e MongoDB.
-              Hospedado no UOLHost. Além do site, o projeto abrange um CMS
-              que controla todas as informações dos imóveis da corretora.</h3>
+            <h3>{content.miriaFloresDescription}</h3>
           </a>
         </Col>
         <Col xs={12} md={4} className="portfolio-item">
           <a href="https://www.artelazermoveis.com.br">
             <Image src="/img/artelazer.png" className="portfolio-image" responsive />
             <h1>Art & Lazer Móveis</h1>
-            <h3>Desenvolvido em NodeJs, React, MongoDb e hospedado no Heroku.
-              O projeto também conta com um CMS para gerenciar os dados dos móveis,
-            ambientes e promoções do website.</h3>
+            <h3>{content.artelazerDescription}</h3>
           </a>
         </Col>
 
@@ -44,5 +38,5 @@ const PortfolioPage = () => (
   </Col>
 )
 
-export default PortfolioPage
+export default Portfolio
 

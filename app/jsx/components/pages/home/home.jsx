@@ -20,7 +20,7 @@ export default ({content}) => (
 
       <Col xs={12} id="options">
         <Col xs={12} sm={4} className="option" id="curriculum-container">
-          <a href="/#/curriculo">
+          <a href={content.curriculumLink}>
             <div id="curriculum-border">
               <Glyphicon glyph="file" id="curriculum-glyph" />
               <h3>{content.seeCurriculum}</h3>
@@ -29,7 +29,7 @@ export default ({content}) => (
         </Col>
 
         <Col xs={12} sm={4} className="option" id="portfolio-container">
-          <a href="/#/portfolio">
+          <a href={content.portfolioLink}>
             <div id="portfolio-border">
               <Glyphicon glyph="book" id="book-glyph" />
               <h3>{content.seePortfolio}</h3>
@@ -38,7 +38,7 @@ export default ({content}) => (
         </Col>
 
         <Col xs={12} sm={4} className="option text-center">
-          <a href="/#/contato">
+          <a href={content.contactLink}>
             <Col id="contact-border">
               <Glyphicon glyph="send" id="contact-glyph" />
               <h3>{content.sendMessage}</h3>

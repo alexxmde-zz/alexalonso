@@ -12546,7 +12546,6 @@ var Contato = function (_React$Component) {
                 _react2.default.createElement(_reactBootstrap.FormControl, {
                   type: 'email',
                   value: this.state.email,
-                  placeholder: 'Seu email...',
                   onChange: this.onEmailChange
                 })
               ),
@@ -12861,7 +12860,7 @@ exports.default = function (_ref) {
           { xs: 12, sm: 4, className: 'option', id: 'curriculum-container' },
           _react2.default.createElement(
             'a',
-            { href: '/#/curriculo' },
+            { href: content.curriculumLink },
             _react2.default.createElement(
               'div',
               { id: 'curriculum-border' },
@@ -12879,7 +12878,7 @@ exports.default = function (_ref) {
           { xs: 12, sm: 4, className: 'option', id: 'portfolio-container' },
           _react2.default.createElement(
             'a',
-            { href: '/#/portfolio' },
+            { href: content.portfolioLink },
             _react2.default.createElement(
               'div',
               { id: 'portfolio-border' },
@@ -12897,7 +12896,7 @@ exports.default = function (_ref) {
           { xs: 12, sm: 4, className: 'option text-center' },
           _react2.default.createElement(
             'a',
-            { href: '/#/contato' },
+            { href: content.contactLink },
             _react2.default.createElement(
               _reactBootstrap.Col,
               { id: 'contact-border' },
@@ -21856,7 +21855,10 @@ var HomePageEn = function (_React$Component) {
         whatIdo: 'I develop apps and websites!',
         seeCurriculum: 'See Curriculum',
         seePortfolio: 'See Portfolio',
-        sendMessage: 'Send me a Message'
+        sendMessage: 'Send me a Message',
+        curriculumLink: '/#/en/curriculum',
+        portfolioLink: '/#/en/portfolio',
+        contactLink: '/#/en/contact'
       };
       return _react2.default.createElement(_home2.default, { content: content });
     }
@@ -22144,7 +22146,10 @@ var HomePagePt = function (_React$Component) {
         whatIdo: 'Eu desenvolvo websites, apps e sistemas!',
         seeCurriculum: 'Ver Currículo',
         seePortfolio: 'Ver Portfólio',
-        sendMessage: 'Enviar Mensagem'
+        sendMessage: 'Enviar Mensagem',
+        curriculumLink: '/#/pt/curriculo',
+        portfolioLink: '/#/pt/portfolio',
+        contactLink: '/#/pt/contato'
       };
 
       return _react2.default.createElement(_home2.default, { content: content });

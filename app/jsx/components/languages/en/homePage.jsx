@@ -8,7 +8,10 @@ export default class HomePageEn extends React.Component {
       whatIdo: `I develop apps and websites!`,
       seeCurriculum: `See Curriculum`,
       seePortfolio: `See Portfolio`,
-      sendMessage: `Send me a Message`
+      sendMessage: `Send me a Message`,
+      curriculumLink: '/#/en/curriculum',
+      portfolioLink:'/#/en/portfolio',
+      contactLink: '/#/en/contact',
     }
     return (
       <Home content={content} />

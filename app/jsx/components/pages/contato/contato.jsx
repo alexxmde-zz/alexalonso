@@ -104,7 +104,6 @@ class Contato extends React.Component {
                 <FormControl
                   type="email"
                   value={this.state.email}
-                  placeholder="Seu email..."
                   onChange={this.onEmailChange}
                 />
               </FormGroup>

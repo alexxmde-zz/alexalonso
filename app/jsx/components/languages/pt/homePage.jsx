@@ -9,6 +9,9 @@ export default class HomePagePt extends React.Component {
       seeCurriculum: 'Ver Currículo',
       seePortfolio: 'Ver Portfólio',
       sendMessage: 'Enviar Mensagem',
+      curriculumLink: '/#/pt/curriculo',
+      portfolioLink: '/#/pt/portfolio',
+      contactLink: '/#/pt/contato',
     }
 
     return (

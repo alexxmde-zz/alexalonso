@@ -17,7 +17,7 @@ class AppEn extends React.Component {
     homeLink: '/#/en',
     socialNetworks: 'Social Networks',
     language: 'Language',
-    linkPt: '/#/pt',
+    linkPt: '/#/',
     linkEn: '/#/en'
 }
   return(

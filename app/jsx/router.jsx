@@ -13,19 +13,17 @@ import ContatoPagePt from './components/languages/pt/contatoPage'
 
 export default (
   <Router history={hashHistory}>
-    <Route path="/">
-      <Route path="/en" component={AppEn}>
-        <IndexRoute component={HomePageEn} />
-        <Route path="/en/curriculum" component={CurriculoPageEn} />
-        <Route path="/en/portfolio" component={PortfolioPageEn} />
-        <Route path="/en/contact" component={ContactPageEn} />
-      </Route>
-      <Route path="/pt" component={AppPt}>
-        <IndexRoute component={HomePagePt} />
-        <Route path="/pt/curriculo" component={CurriculoPagePt} />
-        <Route path="/pt/portfolio" component={PortfolioPage} />
-        <Route path="/pt/contato" component={ContatoPagePt} />
-      </Route>
+    <Route path="/" component={AppPt}>
+      <IndexRoute component={HomePagePt} />
+      <Route path="/pt/curriculo" component={CurriculoPagePt} />
+      <Route path="/pt/portfolio" component={PortfolioPage} />
+      <Route path="/pt/contato" component={ContatoPagePt} />
+    </Route>
+    <Route path="/en" component={AppEn}>
+      <IndexRoute component={HomePageEn} />
+      <Route path="/en/curriculum" component={CurriculoPageEn} />
+      <Route path="/en/portfolio" component={PortfolioPageEn} />
+      <Route path="/en/contact" component={ContactPageEn} />
     </Route>
   </Router>
 )

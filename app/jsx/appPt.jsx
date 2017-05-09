@@ -14,10 +14,10 @@ class AppPt extends React.Component {
     contact: 'Contato',
     contactLink: '/#/pt/contato',
     home: 'Home',
-    homeLink: '/#/pt',
+    homeLink: '/#/',
     socialNetworks: 'Redes Sociais',
     language: 'Language',
-    linkPt:'/#/pt',
+    linkPt:'/#/',
     linkEn:'/#/en'
 }
   return(

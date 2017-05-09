@@ -21448,23 +21448,19 @@ exports.default = _react2.default.createElement(
   { history: _reactRouter.hashHistory },
   _react2.default.createElement(
     _reactRouter.Route,
-    { path: '/' },
-    _react2.default.createElement(
-      _reactRouter.Route,
-      { path: '/en', component: _appEn2.default },
-      _react2.default.createElement(_reactRouter.IndexRoute, { component: _homePage4.default }),
-      _react2.default.createElement(_reactRouter.Route, { path: '/en/curriculum', component: _curriculoPage4.default }),
-      _react2.default.createElement(_reactRouter.Route, { path: '/en/portfolio', component: _portfolioPage4.default }),
-      _react2.default.createElement(_reactRouter.Route, { path: '/en/contact', component: _contactPage2.default })
-    ),
-    _react2.default.createElement(
-      _reactRouter.Route,
-      { path: '/pt', component: _appPt2.default },
-      _react2.default.createElement(_reactRouter.IndexRoute, { component: _homePage2.default }),
-      _react2.default.createElement(_reactRouter.Route, { path: '/pt/curriculo', component: _curriculoPage2.default }),
-      _react2.default.createElement(_reactRouter.Route, { path: '/pt/portfolio', component: _portfolioPage2.default }),
-      _react2.default.createElement(_reactRouter.Route, { path: '/pt/contato', component: _contatoPage2.default })
-    )
+    { path: '/', component: _appPt2.default },
+    _react2.default.createElement(_reactRouter.IndexRoute, { component: _homePage2.default }),
+    _react2.default.createElement(_reactRouter.Route, { path: '/pt/curriculo', component: _curriculoPage2.default }),
+    _react2.default.createElement(_reactRouter.Route, { path: '/pt/portfolio', component: _portfolioPage2.default }),
+    _react2.default.createElement(_reactRouter.Route, { path: '/pt/contato', component: _contatoPage2.default })
+  ),
+  _react2.default.createElement(
+    _reactRouter.Route,
+    { path: '/en', component: _appEn2.default },
+    _react2.default.createElement(_reactRouter.IndexRoute, { component: _homePage4.default }),
+    _react2.default.createElement(_reactRouter.Route, { path: '/en/curriculum', component: _curriculoPage4.default }),
+    _react2.default.createElement(_reactRouter.Route, { path: '/en/portfolio', component: _portfolioPage4.default }),
+    _react2.default.createElement(_reactRouter.Route, { path: '/en/contact', component: _contactPage2.default })
   )
 );
 
@@ -21541,7 +21537,7 @@ var AppEn = function (_React$Component) {
         homeLink: '/#/en',
         socialNetworks: 'Social Networks',
         language: 'Language',
-        linkPt: '/#/pt',
+        linkPt: '/#/',
         linkEn: '/#/en'
       };
       return _react2.default.createElement(
